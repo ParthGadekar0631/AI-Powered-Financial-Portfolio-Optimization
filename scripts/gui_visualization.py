@@ -105,9 +105,13 @@ pause_button = tk.Button(frame_controls, image=pause_icon, command=pause_model, 
 pause_button.grid(row=0, column=2, padx=10, pady=10)
 
 # Create a matplotlib figure for plotting portfolio values
-fig, ax = plt.subplots(figsize=(5, 3))
+# Increase the Matplotlib figure size
+fig, ax = plt.subplots(figsize=(8, 5))  # Larger figure size for better visibility
 canvas = FigureCanvasTkAgg(fig, window)
 canvas.get_tk_widget().pack(pady=20)
+
+# Adjust Tkinter window size
+window.geometry("1000x700")  # Increase window size to fit larger plot
 
 # Function to provide summary analysis of the portfolio NAV
 def analyze_performance():
