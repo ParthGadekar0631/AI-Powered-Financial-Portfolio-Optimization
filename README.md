@@ -126,5 +126,3 @@ Copy code
 4. Name the file `README.md`.
 5. Paste the content into the file.
 6. Commit the changes.
-
-This merged version retains a professional structure and covers all key aspects of your project. It provide
